@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home · UIU Pulse</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body data-page="home">
+<div class="banner" id="traffic-banner">
+<div class="msg">
+<svg fill="none" height="17" style="flex-shrink:0;" viewbox="0 0 24 24" width="17"><path d="M12 2L1 21h22L12 2z" stroke="#fff" stroke-linejoin="round" stroke-width="2"></path><path d="M12 9v5M12 17h.01" stroke="#fff" stroke-linecap="round" stroke-width="2"></path></svg>
+<b>Traffic Alert:</b>
+<span>Moderate congestion near Madani Avenue. Students advised to leave 20 min early.</span>
+</div>
+<div class="right">
+<span class="updated">Sample notice</span>
+<a class="details-btn" href="alerts.html">View Details</a>
+<button class="close" onclick="document.getElementById('traffic-banner').classList.add('hidden')">✕</button>
+</div>
+</div>
+<div class="navbar">
+<a class="brand" href="home.html">
+<div class="logo">
+<svg fill="none" height="20" viewbox="0 0 24 24" width="20"><path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3z" fill="currentColor"></path><path d="M5 13.18v4.09c0 1.5 3.13 3.73 7 3.73s7-2.23 7-3.73v-4.09L12 17l-7-3.82z" fill="currentColor"></path></svg>
+</div>
+<div>
+<div class="name">UIU Pulse</div>
+<div class="sub">United International University</div>
+</div>
+</a>
+<div class="navlinks" id="navlinks">
+<a class="active" href="home.html">Home</a>
+<a class="" href="news.html">News</a>
+<a class="" href="events.html">Events</a>
+<a class="" href="achievements.html">Achievements</a>
+<a class="" href="research.html">Research</a>
+<a class="" href="competitions.html">Competitions</a>
+<a class="" href="alerts.html">Campus Alerts</a>
+</div>
+<div class="navactions">
+<button class="search-btn" onclick="focusPageSearch()"><svg fill="none" height="15" viewbox="0 0 24 24" width="15"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"></circle><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg><span>Search</span></button>
+<div class="notif-wrap">
+<button class="icon-btn" onclick="toggleNotifPanel()"><svg fill="none" height="17" viewbox="0 0 24 24" width="17"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M13.7 21a2 2 0 01-3.4 0" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg><span class="dot" id="notif-dot"></span></button>
+<div class="notif-panel" id="notif-panel">
+<div class="notif-head">Notifications</div>
+<div class="notif-item"><b>New event posted</b><span>AI &amp; Robotics Seminar 2026 registration is open.</span></div>
+<div class="notif-item"><b>Alert update</b><span>Traffic congestion near Madani Avenue.</span></div>
+<div class="notif-item"><b>Research grant</b><span>NST Fellowship deadline in 9 days.</span></div>
+</div>
+</div>
+<!-- Sign In Button (লগইন থাকলে অটো হাইড হয়ে যাবে) -->
+  <a class="btn-cta" data-auth-state="guest" href="index.html" style="padding:8px 16px;font-size:13.5px;">Sign In</a>
+
+  <!-- User Profile Chip (লগইন করলে আসল ছবি ও নাম দেখাবে) -->
+  <div class="user-chip" data-auth-state="user" id="user-chip" style="display: none;">
+    <div class="av">D</div>
+    <span>Demo</span>
+    <a href="logout.html" id="logoutBtn" class="logout-btn">Sign Out</a>
+  </div>
+</div>
+<div class="menu-wrap">
+<button class="icon-btn" onclick="toggleMobileNav()"><svg fill="none" height="17" viewbox="0 0 24 24" width="17"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></button>
+<div class="mobile-nav" id="mobile-nav">
+<a class="active" href="home.html">Home</a>
+<a class="" href="news.html">News</a>
+<a class="" href="events.html">Events</a>
+<a class="" href="achievements.html">Achievements</a>
+<a class="" href="research.html">Research</a>
+<a class="" href="competitions.html">Competitions</a>
+<a class="" href="alerts.html">Campus Alerts</a>
+</div>
+</div>
+</div>
+</div>
+<div class="app-shell">
+<div class="page active" id="page-home">
+<div class="home-hero">
+<div class="home-hero-inner">
+<div>
+<div class="pill-tag" style="margin-top:0;">
+<svg fill="none" height="13" viewbox="0 0 24 24" width="13"><path d="M2 12a10 10 0 0120 0M6 12a6 6 0 0112 0M10 12a2 2 0 014 0" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+            Live updates enabled
+          </div>
+<h1>Everything Happening at UIU, <span class="accent">In One Place.</span></h1>
+<p class="lead">Get real-time access to university news, events, research opportunities, achievements, competitions, and alerts that matter to your campus life.</p>
+<div class="cta-row">
+<a class="btn-cta" href="news.html">Explore Latest Updates →</a>
+<a class="btn-cta ghost" href="alerts.html">⚠ View Campus Alerts</a>
+</div>
+<div class="stat-strip">
+<div class="stat"><b>24K+</b><span>Active students</span></div>
+<div class="stat"><b>1.2K+</b><span>Faculty &amp; staff</span></div>
+<div class="stat"><b>340+</b><span>Events yearly</span></div>
+</div>
+</div>
+<div class="side-cards">
+<div class="side-card">
+<div class="weather-row">
+<div>
+<div class="temp">29°C</div>
+<div class="temp-sub">Partly cloudy · Dhaka</div>
+</div>
+<div class="wr-right">💧 18 km/h<br/>Humidity 78%</div>
+</div>
+</div>
+<a class="side-card event clickable" href="events.html">
+<div class="label">📅 Next Event</div>
+<div class="ev-title">AI &amp; Robotics Seminar 2026</div>
+<div class="ev-time">🕐 July 22, 2026 · 10:00 AM</div>
+<div class="avatars">
+<div class="avatar-stack">
+<div class="av">A</div><div class="av">B</div><div class="av">C</div><div class="av">+142</div>
+</div>
+<span class="rsvp-link">RSVP →</span>
+</div>
+</a>
+<a class="side-card clickable" href="news.html">
+<div class="label orange">⚡ Latest Announcement</div>
+<p class="ann">Fall 2026 semester registration opens August 5. Confirm your course selections early.</p>
+<div class="meta">Posted by Registrar · 2 hours ago</div>
+</a>
+<a class="side-card alert clickable" href="alerts.html">
+<div class="label">⚠ Traffic Alert · Moderate</div>
+<p>Congestion near Madani Ave — leave 20 min early</p>
+</a>
+</div>
+</div>
+</div>
+<div class="quick-access">
+<h2>Quick Access</h2>
+<p>Browse by category</p>
+<div class="qa-grid">
+<a class="qa-card" href="news.html"><div class="qa-icon" style="background:#f2e9fc;color:#8b3fd1;">📰</div><b>Latest News</b><span>University updates</span><span class="qa-badge blue">4 New</span></a>
+<a class="qa-card" href="events.html"><div class="qa-icon" style="background:#eef3ff;color:var(--blue-500);">📅</div><b>Campus Events</b><span>Seminars &amp; fairs</span><span class="qa-badge cyan">4 Upcoming</span></a>
+<a class="qa-card" href="achievements.html"><div class="qa-icon" style="background:var(--orange-50);color:var(--orange-500);">🏆</div><b>Achievements</b><span>Campus excellence</span><span class="qa-badge orange">3 New</span></a>
+<a class="qa-card" href="research.html"><div class="qa-icon" style="background:var(--green-50);color:var(--green-500);">🎓</div><b>Research Grants</b><span>Funding opportunities</span><span class="qa-badge green">3 Open</span></a>
+<a class="qa-card" href="competitions.html"><div class="qa-icon" style="background:#f2e9fc;color:#8b3fd1;">🥇</div><b>Competitions</b><span>Open registrations</span><span class="qa-badge purple">3 Open</span></a>
+<a class="qa-card" href="alerts.html"><div class="qa-icon" style="background:#fdecea;color:var(--red-500);">🛡️</div><b>Campus Alerts</b><span>Safety &amp; notices</span><span class="qa-badge red">3 Active</span></a>
+</div>
+</div>
+<!-- Today at UIU -->
+<div class="home-block tight">
+<div class="today-strip">
+<div class="today-head">
+<h3>📶 Today at UIU</h3>
+<span class="today-updated">Updated 9:45 AM</span>
+</div>
+<div class="today-grid">
+<div class="today-stat"><div class="ts-top">🌤️ Campus Weather</div><div class="ts-value">29°C</div><div class="ts-sub">Partly cloudy, Dhaka</div></div>
+<div class="today-stat"><div class="ts-top">📅 Upcoming Events</div><div class="ts-value">4</div><div class="ts-sub">This month across campus</div></div>
+<div class="today-stat"><div class="ts-top">📰 New Articles</div><div class="ts-value">4</div><div class="ts-sub">Published this week</div></div>
+<div class="today-stat"><div class="ts-top">🥇 Registrations</div><div class="ts-value">Open</div><div class="ts-sub">3 competitions accepting entries</div></div>
+<div class="today-stat"><div class="ts-top">🛡️ Alert Level</div><div class="ts-value">Moderate</div><div class="ts-sub">Traffic advisory active</div></div>
+<div class="today-stat"><div class="ts-top">👥 Next Event Seats</div><div class="ts-value">142/180</div><div class="ts-sub">AI &amp; Robotics Seminar</div></div>
+</div>
+</div>
+</div>
+<!-- Featured News -->
+<div class="home-block">
+<div class="section-head">
+<div><h2>Featured News</h2><p>Curated stories from around campus</p></div>
+<a class="view-all-link" href="news.html">View All News →</a>
+</div>
+<div class="news-hero-card" data-item-key="news:UIU Researchers Develop Breakthrough AI Model for Early Disease Detection">
+<div class="thumb"><img alt="" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&amp;q=80"/><span class="cat-badge research">Research</span>
+<div class="thumb-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div></div>
+<div class="news-body"><h3>UIU Researchers Develop Breakthrough AI Model for Early Disease Detection</h3><p>A team from the Department of Computer Science and Engineering has published groundbreaking research on AI-driven diagnostics.</p>
+<div class="news-meta"><span class="author">Dr. Farhana Islam</span><span>🕐 6 min read</span></div></div>
+</div>
+<div class="news-list-compact">
+<div class="news-row-item" data-item-key="news:UIU Programming Contest 2026 Attracts Record 840 Participants Nationwide">
+<div class="row-thumb"><img alt="" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&amp;q=80"/></div>
+<div class="row-content">
+<span class="row-cat student">Student Life</span>
+<h4>UIU Programming Contest 2026 Attracts Record 840 Participants Nationwide</h4>
+<div class="row-meta">Competitions Cell · 4 min read</div>
+</div>
+</div>
+<div class="news-row-item" data-item-key="news:New Semester Registration Opens August 5 — Key Dates Announced">
+<div class="row-thumb"><img alt="" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&amp;q=80"/></div>
+<div class="row-content">
+<span class="row-cat academic">Academic</span>
+<h4>New Semester Registration Opens August 5 — Key Dates Announced</h4>
+<div class="row-meta">Registrar's Office · 3 min read</div>
+</div>
+</div>
+<div class="news-row-item" data-item-key="news:UIU Graduates Celebrate Commencement Overseas Exchange Milestone">
+<div class="row-thumb"><img alt="" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&amp;q=80"/></div>
+<div class="row-content">
+<span class="row-cat international">International</span>
+<h4>UIU Graduates Celebrate Commencement Overseas Exchange Milestone</h4>
+<div class="row-meta">International Office · 5 min read</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Events -->
+<div class="home-block">
+<div class="section-head">
+<div><h2>Upcoming Events</h2><p>Don't miss what's happening on campus</p></div>
+<a class="view-all-link" href="events.html">View Calendar →</a>
+</div>
+<div class="filter-row" id="home-event-filters">
+<button class="pill active" data-filter="All" onclick="setHomeEventFilter('All',this)">All</button>
+<button class="pill" data-filter="Seminar" onclick="setHomeEventFilter('Seminar',this)">Seminar</button>
+<button class="pill" data-filter="Fair" onclick="setHomeEventFilter('Fair',this)">Fair</button>
+<button class="pill" data-filter="Workshop" onclick="setHomeEventFilter('Workshop',this)">Workshop</button>
+<button class="pill" data-filter="Festival" onclick="setHomeEventFilter('Festival',this)">Festival</button>
+</div>
+<div class="grid3" id="home-events-grid">
+<div class="ev-card" data-cat="Seminar" data-event-date="July 22, 2026 · 10:00 AM – 5:00 PM" data-event-location="Auditorium, UIU Campus" data-item-key="event:AI &amp; Robotics Seminar 2026">
+<div class="ev-top"><span class="ev-cat seminar">Seminar</span><span class="spots">38 spots left</span></div>
+<h3>AI &amp; Robotics Seminar 2026</h3><p class="desc">Industry leaders and researchers discuss the future of intelligent automation and robotics in Bangladesh.</p>
+<div class="ev-meta"><div>🕐 July 22, 2026 · 10:00 AM – 5:00 PM</div><div>📍 Auditorium, UIU Campus</div><div>👥 CSE Department</div></div>
+<div class="progress-track"><div class="progress-fill" style="width:79%"></div></div>
+<div class="progress-label">142 / 180 registered (79%)</div>
+<div class="ev-actions"><button class="btn-rsvp" data-action-key="event:AI &amp; Robotics Seminar 2026:RSVP Now" data-action-verb="registered for this event" data-done-label="✓ Registered" data-original-label="RSVP Now" onclick="toggleActionBtn(this,'✓ Registered','registered for this event')">RSVP Now</button><button class="btn-cal" onclick="toggleCalBtn(this)">+ Cal</button><button class="icon-sq" onclick="shareItem()">⤴</button></div>
+</div>
+<div class="ev-card" data-cat="Fair" data-event-date="July 29, 2026 · 9:00 AM – 4:00 PM" data-event-location="Convention Hall, UIU" data-item-key="event:Career &amp; Internship Fair">
+<div class="ev-top"><span class="ev-cat fair">Fair</span><span class="spots">111 spots left</span></div>
+<h3>Career &amp; Internship Fair</h3><p class="desc">60+ companies recruiting for full-time positions and internships across engineering, business, and design.</p>
+<div class="ev-meta"><div>🕐 July 29, 2026 · 9:00 AM – 4:00 PM</div><div>📍 Convention Hall, UIU</div><div>👥 Career Services</div></div>
+<div class="progress-track"><div class="progress-fill" style="width:78%"></div></div>
+<div class="progress-label">389 / 500 registered (78%)</div>
+<div class="ev-actions"><button class="btn-rsvp" data-action-key="event:Career &amp; Internship Fair:RSVP Now" data-action-verb="registered for this event" data-done-label="✓ Registered" data-original-label="RSVP Now" onclick="toggleActionBtn(this,'✓ Registered','registered for this event')">RSVP Now</button><button class="btn-cal" onclick="toggleCalBtn(this)">+ Cal</button><button class="icon-sq" onclick="shareItem()">⤴</button></div>
+</div>
+<div class="ev-card" data-cat="Workshop" data-event-date="August 3, 2026 · 2:00 PM – 6:00 PM" data-event-location="Research Center, Room 301" data-item-key="event:Research Methodology Workshop">
+<div class="ev-top"><span class="ev-cat workshop">Workshop</span><span class="spots">12 spots left</span></div>
+<h3>Research Methodology Workshop</h3><p class="desc">Hands-on workshop covering quantitative and qualitative research design for postgraduate students.</p>
+<div class="ev-meta"><div>🕐 August 3, 2026 · 2:00 PM – 6:00 PM</div><div>📍 Research Center, Room 301</div><div>👥 Graduate School</div></div>
+<div class="progress-track"><div class="progress-fill" style="width:80%"></div></div>
+<div class="progress-label">48 / 60 registered (80%)</div>
+<div class="ev-actions"><button class="btn-rsvp" data-action-key="event:Research Methodology Workshop:RSVP Now" data-action-verb="registered for this event" data-done-label="✓ Registered" data-original-label="RSVP Now" onclick="toggleActionBtn(this,'✓ Registered','registered for this event')">RSVP Now</button><button class="btn-cal" onclick="toggleCalBtn(this)">+ Cal</button><button class="icon-sq" onclick="shareItem()">⤴</button></div>
+</div>
+<div class="ev-card" data-cat="Festival" data-event-date="August 10, 2026 · 3:00 PM – 9:00 PM" data-event-location="Open Ground, UIU Campus" data-item-key="event:Cultural Festival — Eid Special">
+<div class="ev-top"><span class="ev-cat festival">Festival</span><span class="spots">440 spots left</span></div>
+<h3>Cultural Festival — Eid Special</h3><p class="desc">Annual cultural evening featuring performances, art exhibitions, and food from UIU's diverse student community.</p>
+<div class="ev-meta"><div>🕐 August 10, 2026 · 3:00 PM – 9:00 PM</div><div>📍 Open Ground, UIU Campus</div><div>👥 Student Affairs</div></div>
+<div class="progress-track"><div class="progress-fill" style="width:32%"></div></div>
+<div class="progress-label">160 / 500 registered (32%)</div>
+<div class="ev-actions"><button class="btn-rsvp" data-action-key="event:Cultural Festival — Eid Special:RSVP Now" data-action-verb="registered for this event" data-done-label="✓ Registered" data-original-label="RSVP Now" onclick="toggleActionBtn(this,'✓ Registered','registered for this event')">RSVP Now</button><button class="btn-cal" onclick="toggleCalBtn(this)">+ Cal</button><button class="icon-sq" onclick="shareItem()">⤴</button></div>
+</div>
+</div>
+</div>
+<!-- Research & Grant Opportunities -->
+<div class="home-block">
+<div class="section-head">
+<div><h2>Research &amp; Grant Opportunities</h2><p>Funding open to UIU students and faculty</p></div>
+<a class="view-all-link" href="research.html">View All →</a>
+</div>
+<div class="grid3">
+<div class="prog-card" data-item-key="program:NST Fellowship — Computational Biology Track">
+<div class="badge-row">
+<span class="tag-badge new">New</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>NST Fellowship — Computational Biology Track</h3><p class="org">Ministry of Science &amp; Technology</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Department</span><span class="v">CSE &amp; Biotechnology</span></div>
+<div class="kv-row"><span class="k">Amount</span><span class="v green">BDT 12,00,000</span></div>
+<div class="kv-row"><span class="k">Deadline</span><span class="v">Aug 15, 2026</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">Faculty &amp; PhD Students</span></div>
+</div>
+<button class="btn-block" data-action-key="program:NST Fellowship — Computational Biology Track:Apply Now" data-action-verb="applied for this grant" data-done-label="✓ Applied" data-original-label="Apply Now" onclick="toggleActionBtn(this,'✓ Applied','applied for this grant')">Apply Now</button>
+</div>
+<div class="prog-card" data-item-key="program:ICT Innovation Fund — Smart Cities Research">
+<div class="badge-row">
+<span class="tag-badge faculty">Faculty Only</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>ICT Innovation Fund — Smart Cities Research</h3><p class="org">Bangladesh ICT Division</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Department</span><span class="v">EEE / CSE</span></div>
+<div class="kv-row"><span class="k">Amount</span><span class="v green">BDT 25,00,000</span></div>
+<div class="kv-row"><span class="k">Deadline</span><span class="v">Aug 30, 2026</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">Faculty Only</span></div>
+</div>
+<button class="btn-block" data-action-key="program:ICT Innovation Fund — Smart Cities Research:Apply Now" data-action-verb="applied for this grant" data-done-label="✓ Applied" data-original-label="Apply Now" onclick="toggleActionBtn(this,'✓ Applied','applied for this grant')">Apply Now</button>
+</div>
+<div class="prog-card" data-item-key="program:BRAC JPGSPH Collaborative Research Grant">
+<div class="badge-row">
+<span class="tag-badge closing">Closing Soon</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>BRAC JPGSPH Collaborative Research Grant</h3><p class="org">BRAC University</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Department</span><span class="v">Public Health</span></div>
+<div class="kv-row"><span class="k">Amount</span><span class="v green">BDT 8,00,000</span></div>
+<div class="kv-row"><span class="k">Deadline</span><span class="v">Jul 31, 2026</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">Open to All</span></div>
+</div>
+<button class="btn-block" data-action-key="program:BRAC JPGSPH Collaborative Research Grant:Apply Now" data-action-verb="applied for this grant" data-done-label="✓ Applied" data-original-label="Apply Now" onclick="toggleActionBtn(this,'✓ Applied','applied for this grant')">Apply Now</button>
+</div>
+</div>
+</div>
+<!-- Achievements Showcase -->
+<div class="home-block">
+<div class="ach-dark-section">
+<div class="section-head">
+<div><h2>Achievements Showcase</h2><p>Celebrating student, faculty &amp; institutional excellence</p></div>
+<a class="view-all-link" href="achievements.html">View All →</a>
+</div>
+<div class="grid3">
+<div class="ach-dark-card" data-item-key="achievement:National Robotic Olympiad — 1st Place">
+<div class="thumb"><img alt="" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&amp;q=80"/></div>
+<div class="body">
+<div class="date">⭐ July 10, 2026</div>
+<h3>National Robotic Olympiad — 1st Place</h3>
+<p>Team UIU-Delta took gold at the Bangladesh Robotics Championship, defeating 47 teams from 30 universities.</p>
+<button class="read-more" data-date="July 10, 2026" data-full="Team UIU-Delta swept the Bangladesh Robotics Championship this year, defeating 47 teams from 30 universities nationwide. The team's autonomous navigation robot outperformed the field in both speed and precision trials, marking UIU's third consecutive year on the podium." data-tag="Competition" data-title="National Robotic Olympiad — 1st Place" onclick="readFullStory(this)">Read More ›</button>
+</div>
+</div>
+<div class="ach-dark-card" data-item-key="achievement:Professor Karim Receives Commonwealth Research Fellowship">
+<div class="thumb"><img alt="" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&amp;q=80"/></div>
+<div class="body">
+<div class="date">⭐ July 7, 2026</div>
+<h3>Professor Karim Receives Commonwealth Research Fellowship</h3>
+<p>Dr. Md. Karimul Haque (EEE) awarded the prestigious Commonwealth Fellowship for sustainable energy research at University of Edinburgh.</p>
+<button class="read-more" data-date="July 7, 2026" data-full="Dr. Md. Karimul Haque of the Department of Electrical &amp; Electronic Engineering has been awarded the Commonwealth Research Fellowship, one of the most competitive research awards in the Commonwealth. He will spend the next academic year at the University of Edinburgh researching grid-scale renewable energy storage." data-tag="Faculty" data-title="Professor Karim Receives Commonwealth Research Fellowship" onclick="readFullStory(this)">Read More ›</button>
+</div>
+</div>
+<div class="ach-dark-card" data-item-key="achievement:UIU Rises to #3 in University Rankings Bangladesh 2026">
+<div class="thumb"><img alt="" src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&amp;q=80"/></div>
+<div class="body">
+<div class="date">⭐ June 30, 2026</div>
+<h3>UIU Rises to #3 in University Rankings Bangladesh 2026</h3>
+<p>The QS Bangladesh University Ranking places UIU at #3 nationally, marking the highest position in the institution's history.</p>
+<button class="read-more" data-date="June 30, 2026" data-full="The newly released QS Bangladesh University Rankings 2026 place United International University at #3 nationally — its highest position to date. The ranking cited UIU's research output, industry partnerships, and student satisfaction scores as key drivers of the improvement." data-tag="University" data-title="UIU Rises to #3 in University Rankings Bangladesh 2026" onclick="readFullStory(this)">Read More ›</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Open Competitions -->
+<div class="home-block">
+<div class="section-head">
+<div><h2>Open Competitions</h2><p>Register before the deadline closes</p></div>
+<a class="view-all-link" href="competitions.html">View All →</a>
+</div>
+<div class="grid3">
+<div class="prog-card" data-item-key="program:ICPC Asia Dhaka Regional 2026">
+<div class="badge-row">
+<span class="tag-badge international">International</span><span class="tag-badge neutral">Programming</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>ICPC Asia Dhaka Regional 2026</h3><p class="org">ACM ICPC Foundation</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Registration Deadline</span><span class="v">Aug 20, 2026</span></div>
+<div class="kv-row"><span class="k">Event Date</span><span class="v">Sep 5–6, 2026</span></div>
+<div class="kv-row"><span class="k">Team Size</span><span class="v">3 members</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">Undergrad students</span></div>
+<div class="kv-row"><span class="k">Prize Pool</span><span class="v blue">USD 5,000</span></div>
+</div>
+<button class="btn-block" data-action-key="program:ICPC Asia Dhaka Regional 2026:Register Now" data-action-verb="registered for this competition" data-done-label="✓ Registered" data-original-label="Register Now" onclick="toggleActionBtn(this,'✓ Registered','registered for this competition')">Register Now</button>
+</div>
+<div class="prog-card" data-item-key="program:UIU Intra-University Hackathon">
+<div class="badge-row">
+<span class="tag-badge internal">Internal</span><span class="tag-badge neutral">Programming</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>UIU Intra-University Hackathon</h3><p class="org">UIU CS Club</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Registration Deadline</span><span class="v">Jul 28, 2026</span></div>
+<div class="kv-row"><span class="k">Event Date</span><span class="v">Aug 8–9, 2026</span></div>
+<div class="kv-row"><span class="k">Team Size</span><span class="v">2–4 members</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">All UIU students</span></div>
+<div class="kv-row"><span class="k">Prize Pool</span><span class="v blue">BDT 1,50,000</span></div>
+</div>
+<button class="btn-block" data-action-key="program:UIU Intra-University Hackathon:Register Now" data-action-verb="registered for this competition" data-done-label="✓ Registered" data-original-label="Register Now" onclick="toggleActionBtn(this,'✓ Registered','registered for this competition')">Register Now</button>
+</div>
+<div class="prog-card" data-item-key="program:BCC National Business Case Challenge">
+<div class="badge-row">
+<span class="tag-badge national">National</span><span class="tag-badge neutral">Business</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>BCC National Business Case Challenge</h3><p class="org">Bangladesh Commerce Confederation</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Registration Deadline</span><span class="v">Aug 5, 2026</span></div>
+<div class="kv-row"><span class="k">Event Date</span><span class="v">Aug 25, 2026</span></div>
+<div class="kv-row"><span class="k">Team Size</span><span class="v">3–5 members</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">BBA / MBA students</span></div>
+<div class="kv-row"><span class="k">Prize Pool</span><span class="v blue">BDT 3,00,000</span></div>
+</div>
+<button class="btn-block" data-action-key="program:BCC National Business Case Challenge:Register Now" data-action-verb="registered for this competition" data-done-label="✓ Registered" data-original-label="Register Now" onclick="toggleActionBtn(this,'✓ Registered','registered for this competition')">Register Now</button>
+</div>
+</div>
+</div>
+<!-- Live Campus Alerts -->
+<div class="home-block">
+<div class="section-head">
+<div><h2>Live Campus Alerts <span class="live-pill"><span class="dot"></span>Live</span></h2><p>Real-time safety, traffic, and campus notices</p></div>
+<a class="view-all-link" href="alerts.html">Manage →</a>
+</div>
+<div class="grid3">
+<div class="alert-card orange" data-item-key="alert:Moderate Congestion — Madani Avenue" data-sev="Moderate">
+<div class="alert-top"><div class="alert-kind">📍 Traffic</div><span class="sev-badge moderate">Moderate</span></div>
+<h3>Moderate Congestion — Madani Avenue</h3><p class="desc">Slow moving traffic near Madani Avenue approaching UIU gate. Students advised to leave 20 minutes early.</p>
+<div class="alert-meta"><div>📍 Madani Avenue, Dhaka</div><div>🕐 Updated 9:45 AM</div></div>
+<div class="alert-tip orange-tip">ⓘ Use alternative route via Pragati Sarani</div>
+<div class="alert-actions"><button onclick="toggleBookmark(this)">🔖 Save</button><button onclick="shareItem()">⤴ Share</button></div>
+</div>
+<div class="alert-card red" data-item-key="alert:Heavy Rainfall Warning — Afternoon" data-sev="High">
+<div class="alert-top"><div class="alert-kind">🌧 Weather</div><span class="sev-badge high">High</span></div>
+<h3>Heavy Rainfall Warning — Afternoon</h3><p class="desc">BMD forecasts heavy rain with possible thunderstorms between 2 PM – 6 PM. Outdoor events may be affected.</p>
+<div class="alert-meta"><div>📍 Dhaka Metro Area</div><div>🕐 Updated 9:00 AM</div></div>
+<div class="alert-tip orange-tip">ⓘ Carry rain gear; outdoor events rescheduled indoors</div>
+<div class="alert-actions"><button onclick="toggleBookmark(this)">🔖 Save</button><button onclick="shareItem()">⤴ Share</button></div>
+</div>
+<div class="alert-card blue" data-item-key="alert:Elevator Maintenance — Building C" data-sev="Low">
+<div class="alert-top"><div class="alert-kind">🏢 Campus</div><span class="sev-badge low">Low</span></div>
+<h3>Elevator Maintenance — Building C</h3><p class="desc">Elevator in Building C out of service for scheduled maintenance from 10 AM – 1 PM.</p>
+<div class="alert-meta"><div>📍 UIU Building C</div><div>🕐 Updated 6:00 AM</div></div>
+<div class="alert-tip blue-tip">ⓘ Use stairwell; accessible route via Building B bridge</div>
+<div class="alert-actions"><button onclick="toggleBookmark(this)">🔖 Save</button><button onclick="shareItem()">⤴ Share</button></div>
+</div>
+</div>
+</div>
+<!-- Personalized Feed CTA -->
+<div class="home-block" data-auth-state="guest">
+<div class="cta-feed">
+<div>
+<span class="pill-tag" style="margin-top:0;">✨ Personalized for you</span>
+<h2>Create Your Personalized Feed</h2>
+<p>Sign in with your UIU account to follow topics, save stories, register for events, and get alerts tailored to your department and interests.</p>
+<div class="cta-feed-actions">
+<a class="btn-cta white" href="index.html">Sign in with UIU Account →</a>
+<button class="btn-cta ghost" onclick="showToast('UIU Pulse brings all your campus updates into one personalized feed.')">Learn More</button>
+</div>
+</div>
+<div class="cta-chip-grid">
+<div class="cta-chip"><div class="ci">📰</div><b>Saved Stories</b><span>Bookmark articles to read later</span></div>
+<div class="cta-chip"><div class="ci">📅</div><b>Your Events</b><span>Track RSVPs &amp; reminders</span></div>
+<div class="cta-chip"><div class="ci">🎓</div><b>Research Picks</b><span>Grants matched to your dept</span></div>
+<div class="cta-chip"><div class="ci">🥇</div><b>Competitions</b><span>Never miss a deadline</span></div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer-inner">
+<div class="footer-brand">
+<div class="brand">
+<div class="logo"><svg fill="none" height="20" viewbox="0 0 24 24" width="20"><path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3z" fill="currentColor"></path><path d="M5 13.18v4.09c0 1.5 3.13 3.73 7 3.73s7-2.23 7-3.73v-4.09L12 17l-7-3.82z" fill="currentColor"></path></svg></div>
+<div><div class="name">UIU Pulse</div><div class="sub">United International University</div></div>
+</div>
+<p>Your real-time campus intelligence platform. Stay informed, stay ahead.</p>
+</div>
+<div><h4>Platform</h4><ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="alerts.html">Alerts</a></li>
+</ul></div>
+<div><h4>Community</h4><ul>
+<li><a href="achievements.html">Achievements</a></li>
+<li><a href="competitions.html">Competitions</a></li>
+<li><button onclick="showToast('Clubs directory coming soon')">Clubs</button></li>
+<li><button onclick="showToast('Alumni network coming soon')">Alumni</button></li>
+</ul></div>
+<div><h4>Support</h4><ul>
+<li><button onclick="showToast('Help Center coming soon')">Help Center</button></li>
+<li><button onclick="showToast('Thanks — feedback form coming soon')">Feedback</button></li>
+<li><button onclick="showToast('Accessibility statement coming soon')">Accessibility</button></li>
+<li><button onclick="showToast('Privacy policy coming soon')">Privacy</button></li>
+</ul></div>
+</div>
+</footer>
+</div>
+<!-- Achievement "read more" modal (shared across pages that use it) -->
+<div class="modal-overlay" id="story-modal">
+<div class="modal-box">
+<button class="modal-close" onclick="closeStoryModal()">✕</button>
+<span class="modal-tag" id="story-modal-tag"></span>
+<div class="modal-date" id="story-modal-date"></div>
+<h3 id="story-modal-title"></h3>
+<p id="story-modal-body"></p>
+</div>
+</div>
+<div class="toast-container" id="toast-container"></div>
+<script src="js/script.js"></script><script src="js/config.js"></script><script defer="True" src="js/browser.js"></script>
+
+<script>
+function signOut(){
+ localStorage.clear();
+ sessionStorage.clear();
+ window.location.href = "index.html";
+ return false;
+}
+</script>
+</body>
+</html>

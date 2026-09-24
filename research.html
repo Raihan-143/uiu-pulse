@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Research &amp; Grants · UIU Pulse</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body data-page="research">
+<div class="banner" id="traffic-banner">
+<div class="msg">
+<svg fill="none" height="17" style="flex-shrink:0;" viewbox="0 0 24 24" width="17"><path d="M12 2L1 21h22L12 2z" stroke="#fff" stroke-linejoin="round" stroke-width="2"></path><path d="M12 9v5M12 17h.01" stroke="#fff" stroke-linecap="round" stroke-width="2"></path></svg>
+<b>Traffic Alert:</b>
+<span>Moderate congestion near Madani Avenue. Students advised to leave 20 min early.</span>
+</div>
+<div class="right">
+<span class="updated">Sample notice</span>
+<a class="details-btn" href="alerts.html">View Details</a>
+<button class="close" onclick="document.getElementById('traffic-banner').classList.add('hidden')">✕</button>
+</div>
+</div>
+<div class="navbar">
+<a class="brand" href="home.html">
+<div class="logo">
+<svg fill="none" height="20" viewbox="0 0 24 24" width="20"><path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3z" fill="currentColor"></path><path d="M5 13.18v4.09c0 1.5 3.13 3.73 7 3.73s7-2.23 7-3.73v-4.09L12 17l-7-3.82z" fill="currentColor"></path></svg>
+</div>
+<div>
+<div class="name">UIU Pulse</div>
+<div class="sub">United International University</div>
+</div>
+</a>
+<div class="navlinks" id="navlinks">
+<a class="" href="home.html">Home</a>
+<a class="" href="news.html">News</a>
+<a class="" href="events.html">Events</a>
+<a class="" href="achievements.html">Achievements</a>
+<a class="active" href="research.html">Research</a>
+<a class="" href="competitions.html">Competitions</a>
+<a class="" href="alerts.html">Campus Alerts</a>
+</div>
+<div class="navactions">
+<button class="search-btn" onclick="focusPageSearch()"><svg fill="none" height="15" viewbox="0 0 24 24" width="15"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"></circle><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg><span>Search</span></button>
+<div class="notif-wrap">
+<button class="icon-btn" onclick="toggleNotifPanel()"><svg fill="none" height="17" viewbox="0 0 24 24" width="17"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M13.7 21a2 2 0 01-3.4 0" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg><span class="dot" id="notif-dot"></span></button>
+<div class="notif-panel" id="notif-panel">
+<div class="notif-head">Notifications</div>
+<div class="notif-item"><b>New event posted</b><span>AI &amp; Robotics Seminar 2026 registration is open.</span></div>
+<div class="notif-item"><b>Alert update</b><span>Traffic congestion near Madani Avenue.</span></div>
+<div class="notif-item"><b>Research grant</b><span>NST Fellowship deadline in 9 days.</span></div>
+</div>
+</div>
+<a class="btn-cta" data-auth-state="guest" href="index.html" style="padding:8px 16px;font-size:13.5px;">Sign In</a><div class="user-chip" data-auth-state="user" id="user-chip" style="display:none">
+<div class="av">D</div>
+<span>Demo</span>
+<a href="logout.html">Sign out</a>
+</div>
+<div class="menu-wrap">
+<button class="icon-btn" onclick="toggleMobileNav()"><svg fill="none" height="17" viewbox="0 0 24 24" width="17"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></button>
+<div class="mobile-nav" id="mobile-nav">
+<a class="" href="home.html">Home</a>
+<a class="" href="news.html">News</a>
+<a class="" href="events.html">Events</a>
+<a class="" href="achievements.html">Achievements</a>
+<a class="active" href="research.html">Research</a>
+<a class="" href="competitions.html">Competitions</a>
+<a class="" href="alerts.html">Campus Alerts</a>
+</div>
+</div>
+</div>
+</div>
+<div class="app-shell">
+<div class="page active" id="page-research">
+<div class="back-row"><a class="back-btn" href="home.html">← Back to Home</a></div>
+<div class="page-head"><h1>Research &amp; Grants</h1><p>Open funding opportunities and research programs at UIU</p></div>
+<div class="section-body">
+<div class="grid3" id="research-grid">
+<div class="prog-card" data-item-key="program:NST Fellowship — Computational Biology Track">
+<div class="badge-row">
+<span class="tag-badge new">New</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>NST Fellowship — Computational Biology Track</h3><p class="org">Ministry of Science &amp; Technology</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Department</span><span class="v">CSE &amp; Biotechnology</span></div>
+<div class="kv-row"><span class="k">Amount</span><span class="v green">BDT 12,00,000</span></div>
+<div class="kv-row"><span class="k">Deadline</span><span class="v">Aug 15, 2026</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">Faculty &amp; PhD Students</span></div>
+</div>
+<button class="btn-block" data-action-key="program:NST Fellowship — Computational Biology Track:Apply Now" data-action-verb="applied for this grant" data-done-label="✓ Applied" data-original-label="Apply Now" onclick="toggleActionBtn(this,'✓ Applied','applied for this grant')">Apply Now</button>
+</div>
+<div class="prog-card" data-item-key="program:ICT Innovation Fund — Smart Cities Research">
+<div class="badge-row">
+<span class="tag-badge faculty">Faculty Only</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>ICT Innovation Fund — Smart Cities Research</h3><p class="org">Bangladesh ICT Division</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Department</span><span class="v">EEE / CSE</span></div>
+<div class="kv-row"><span class="k">Amount</span><span class="v green">BDT 25,00,000</span></div>
+<div class="kv-row"><span class="k">Deadline</span><span class="v">Aug 30, 2026</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">Faculty Only</span></div>
+</div>
+<button class="btn-block" data-action-key="program:ICT Innovation Fund — Smart Cities Research:Apply Now" data-action-verb="applied for this grant" data-done-label="✓ Applied" data-original-label="Apply Now" onclick="toggleActionBtn(this,'✓ Applied','applied for this grant')">Apply Now</button>
+</div>
+<div class="prog-card" data-item-key="program:BRAC JPGSPH Collaborative Research Grant">
+<div class="badge-row">
+<span class="tag-badge closing">Closing Soon</span> <div class="icon-actions"><button onclick="toggleBookmark(this)">🔖</button><button onclick="shareItem()">⤴</button></div>
+</div>
+<h3>BRAC JPGSPH Collaborative Research Grant</h3><p class="org">BRAC University</p>
+<div class="kv-list">
+<div class="kv-row"><span class="k">Department</span><span class="v">Public Health</span></div>
+<div class="kv-row"><span class="k">Amount</span><span class="v green">BDT 8,00,000</span></div>
+<div class="kv-row"><span class="k">Deadline</span><span class="v">Jul 31, 2026</span></div>
+<div class="kv-row"><span class="k">Eligibility</span><span class="v">Open to All</span></div>
+</div>
+<button class="btn-block" data-action-key="program:BRAC JPGSPH Collaborative Research Grant:Apply Now" data-action-verb="applied for this grant" data-done-label="✓ Applied" data-original-label="Apply Now" onclick="toggleActionBtn(this,'✓ Applied','applied for this grant')">Apply Now</button>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer-inner">
+<div class="footer-brand">
+<div class="brand">
+<div class="logo"><svg fill="none" height="20" viewbox="0 0 24 24" width="20"><path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3z" fill="currentColor"></path><path d="M5 13.18v4.09c0 1.5 3.13 3.73 7 3.73s7-2.23 7-3.73v-4.09L12 17l-7-3.82z" fill="currentColor"></path></svg></div>
+<div><div class="name">UIU Pulse</div><div class="sub">United International University</div></div>
+</div>
+<p>Your real-time campus intelligence platform. Stay informed, stay ahead.</p>
+</div>
+<div><h4>Platform</h4><ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="alerts.html">Alerts</a></li>
+</ul></div>
+<div><h4>Community</h4><ul>
+<li><a href="achievements.html">Achievements</a></li>
+<li><a href="competitions.html">Competitions</a></li>
+<li><button onclick="showToast('Clubs directory coming soon')">Clubs</button></li>
+<li><button onclick="showToast('Alumni network coming soon')">Alumni</button></li>
+</ul></div>
+<div><h4>Support</h4><ul>
+<li><button onclick="showToast('Help Center coming soon')">Help Center</button></li>
+<li><button onclick="showToast('Thanks — feedback form coming soon')">Feedback</button></li>
+<li><button onclick="showToast('Accessibility statement coming soon')">Accessibility</button></li>
+<li><button onclick="showToast('Privacy policy coming soon')">Privacy</button></li>
+</ul></div>
+</div>
+</footer>
+</div>
+<!-- Achievement "read more" modal (shared across pages that use it) -->
+<div class="modal-overlay" id="story-modal">
+<div class="modal-box">
+<button class="modal-close" onclick="closeStoryModal()">✕</button>
+<span class="modal-tag" id="story-modal-tag"></span>
+<div class="modal-date" id="story-modal-date"></div>
+<h3 id="story-modal-title"></h3>
+<p id="story-modal-body"></p>
+</div>
+</div>
+<div class="toast-container" id="toast-container"></div>
+<script src="js/script.js"></script><script src="js/config.js"></script><script defer="True" src="js/browser.js"></script>
+</body>
+</html>

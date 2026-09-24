@@ -1,0 +1,356 @@
+{
+    "newsItems": [
+        {
+            "cat": "research",
+            "catLabel": "Research",
+            "img": "https:\/\/images.unsplash.com\/photo-1576091160399-112ba8d25d1d?w=600&q=80",
+            "title": "UIU Researchers Develop Breakthrough AI Model for Early Disease Detection",
+            "desc": "A team from the Department of Computer Science and Engineering has published groundbreaking research on AI-driven diagnostics.",
+            "author": "Dr. Farhana Islam",
+            "read": "6 min read"
+        },
+        {
+            "cat": "student",
+            "catLabel": "Student Life",
+            "img": "https:\/\/images.unsplash.com\/photo-1517694712202-14dd9538aa97?w=600&q=80",
+            "title": "UIU Programming Contest 2026 Attracts Record 840 Participants Nationwide",
+            "desc": "This year's inter-university programming contest saw teams from 62 institutions competing across five algorithmic tracks.",
+            "author": "Competitions Cell",
+            "read": "4 min read"
+        },
+        {
+            "cat": "academic",
+            "catLabel": "Academic",
+            "img": "https:\/\/images.unsplash.com\/photo-1523050854058-8df90110c9f1?w=600&q=80",
+            "title": "New Semester Registration Opens August 5 — Key Dates Announced",
+            "desc": "The Registrar's Office confirms the Fall 2026 schedule. Course add\/drop period runs August 10–17.",
+            "author": "Registrar's Office",
+            "read": "3 min read"
+        },
+        {
+            "cat": "international",
+            "catLabel": "International",
+            "img": "https:\/\/images.unsplash.com\/photo-1523240795612-9a054b0db644?w=600&q=80",
+            "title": "UIU Graduates Celebrate Commencement Overseas Exchange Milestone",
+            "desc": "Students from the exchange program mark their graduation abroad as UIU's global partnerships continue to expand.",
+            "author": "International Office",
+            "read": "5 min read"
+        }
+    ],
+    "events": [
+        {
+            "cat": "Seminar",
+            "catClass": "seminar",
+            "spots": "38 spots left",
+            "title": "AI & Robotics Seminar 2026",
+            "desc": "Industry leaders and researchers discuss the future of intelligent automation and robotics in Bangladesh.",
+            "date": "July 22, 2026 · 10:00 AM – 5:00 PM",
+            "loc": "Auditorium, UIU Campus",
+            "org": "CSE Department",
+            "pct": 79,
+            "reg": "142 \/ 180 registered (79%)"
+        },
+        {
+            "cat": "Fair",
+            "catClass": "fair",
+            "spots": "111 spots left",
+            "title": "Career & Internship Fair",
+            "desc": "60+ companies recruiting for full-time positions and internships across engineering, business, and design.",
+            "date": "July 29, 2026 · 9:00 AM – 4:00 PM",
+            "loc": "Convention Hall, UIU",
+            "org": "Career Services",
+            "pct": 78,
+            "reg": "389 \/ 500 registered (78%)"
+        },
+        {
+            "cat": "Workshop",
+            "catClass": "workshop",
+            "spots": "12 spots left",
+            "title": "Research Methodology Workshop",
+            "desc": "Hands-on workshop covering quantitative and qualitative research design for postgraduate students.",
+            "date": "August 3, 2026 · 2:00 PM – 6:00 PM",
+            "loc": "Research Center, Room 301",
+            "org": "Graduate School",
+            "pct": 80,
+            "reg": "48 \/ 60 registered (80%)"
+        },
+        {
+            "cat": "Festival",
+            "catClass": "festival",
+            "spots": "440 spots left",
+            "title": "Cultural Festival — Eid Special",
+            "desc": "Annual cultural evening featuring performances, art exhibitions, and food from UIU's diverse student community.",
+            "date": "August 10, 2026 · 3:00 PM – 9:00 PM",
+            "loc": "Open Ground, UIU Campus",
+            "org": "Student Affairs",
+            "pct": 32,
+            "reg": "160 \/ 500 registered (32%)"
+        }
+    ],
+    "research": [
+        {
+            "tags": [
+                [
+                    "New",
+                    "new"
+                ]
+            ],
+            "title": "NST Fellowship — Computational Biology Track",
+            "org": "Ministry of Science & Technology",
+            "rows": [
+                [
+                    "Department",
+                    "CSE & Biotechnology"
+                ],
+                [
+                    "Amount",
+                    "BDT 12,00,000",
+                    "green"
+                ],
+                [
+                    "Deadline",
+                    "Aug 15, 2026"
+                ],
+                [
+                    "Eligibility",
+                    "Faculty & PhD Students"
+                ]
+            ]
+        },
+        {
+            "tags": [
+                [
+                    "Faculty Only",
+                    "faculty"
+                ]
+            ],
+            "title": "ICT Innovation Fund — Smart Cities Research",
+            "org": "Bangladesh ICT Division",
+            "rows": [
+                [
+                    "Department",
+                    "EEE \/ CSE"
+                ],
+                [
+                    "Amount",
+                    "BDT 25,00,000",
+                    "green"
+                ],
+                [
+                    "Deadline",
+                    "Aug 30, 2026"
+                ],
+                [
+                    "Eligibility",
+                    "Faculty Only"
+                ]
+            ]
+        },
+        {
+            "tags": [
+                [
+                    "Closing Soon",
+                    "closing"
+                ]
+            ],
+            "title": "BRAC JPGSPH Collaborative Research Grant",
+            "org": "BRAC University",
+            "rows": [
+                [
+                    "Department",
+                    "Public Health"
+                ],
+                [
+                    "Amount",
+                    "BDT 8,00,000",
+                    "green"
+                ],
+                [
+                    "Deadline",
+                    "Jul 31, 2026"
+                ],
+                [
+                    "Eligibility",
+                    "Open to All"
+                ]
+            ]
+        }
+    ],
+    "comps": [
+        {
+            "tags": [
+                [
+                    "International",
+                    "international"
+                ],
+                [
+                    "Programming",
+                    "neutral"
+                ]
+            ],
+            "title": "ICPC Asia Dhaka Regional 2026",
+            "org": "ACM ICPC Foundation",
+            "rows": [
+                [
+                    "Registration Deadline",
+                    "Aug 20, 2026"
+                ],
+                [
+                    "Event Date",
+                    "Sep 5–6, 2026"
+                ],
+                [
+                    "Team Size",
+                    "3 members"
+                ],
+                [
+                    "Eligibility",
+                    "Undergrad students"
+                ],
+                [
+                    "Prize Pool",
+                    "USD 5,000",
+                    "blue"
+                ]
+            ]
+        },
+        {
+            "tags": [
+                [
+                    "Internal",
+                    "internal"
+                ],
+                [
+                    "Programming",
+                    "neutral"
+                ]
+            ],
+            "title": "UIU Intra-University Hackathon",
+            "org": "UIU CS Club",
+            "rows": [
+                [
+                    "Registration Deadline",
+                    "Jul 28, 2026"
+                ],
+                [
+                    "Event Date",
+                    "Aug 8–9, 2026"
+                ],
+                [
+                    "Team Size",
+                    "2–4 members"
+                ],
+                [
+                    "Eligibility",
+                    "All UIU students"
+                ],
+                [
+                    "Prize Pool",
+                    "BDT 1,50,000",
+                    "blue"
+                ]
+            ]
+        },
+        {
+            "tags": [
+                [
+                    "National",
+                    "national"
+                ],
+                [
+                    "Business",
+                    "neutral"
+                ]
+            ],
+            "title": "BCC National Business Case Challenge",
+            "org": "Bangladesh Commerce Confederation",
+            "rows": [
+                [
+                    "Registration Deadline",
+                    "Aug 5, 2026"
+                ],
+                [
+                    "Event Date",
+                    "Aug 25, 2026"
+                ],
+                [
+                    "Team Size",
+                    "3–5 members"
+                ],
+                [
+                    "Eligibility",
+                    "BBA \/ MBA students"
+                ],
+                [
+                    "Prize Pool",
+                    "BDT 3,00,000",
+                    "blue"
+                ]
+            ]
+        }
+    ],
+    "achievements": [
+        {
+            "tag": "Competition",
+            "img": "https:\/\/images.unsplash.com\/photo-1485827404703-89b55fcc595e?w=600&q=80",
+            "date": "July 10, 2026",
+            "title": "National Robotic Olympiad — 1st Place",
+            "desc": "Team UIU-Delta took gold at the Bangladesh Robotics Championship, defeating 47 teams from 30 universities.",
+            "full": "Team UIU-Delta swept the Bangladesh Robotics Championship this year, defeating 47 teams from 30 universities nationwide. The team's autonomous navigation robot outperformed the field in both speed and precision trials, marking UIU's third consecutive year on the podium."
+        },
+        {
+            "tag": "Faculty",
+            "img": "https:\/\/images.unsplash.com\/photo-1560250097-0b93528c311a?w=600&q=80",
+            "date": "July 7, 2026",
+            "title": "Professor Karim Receives Commonwealth Research Fellowship",
+            "desc": "Dr. Md. Karimul Haque (EEE) awarded the prestigious Commonwealth Fellowship for sustainable energy research at University of Edinburgh.",
+            "full": "Dr. Md. Karimul Haque of the Department of Electrical & Electronic Engineering has been awarded the Commonwealth Research Fellowship, one of the most competitive research awards in the Commonwealth. He will spend the next academic year at the University of Edinburgh researching grid-scale renewable energy storage."
+        },
+        {
+            "tag": "University",
+            "img": "https:\/\/images.unsplash.com\/photo-1541339907198-e08756dedf3f?w=600&q=80",
+            "date": "June 30, 2026",
+            "title": "UIU Rises to #3 in University Rankings Bangladesh 2026",
+            "desc": "The QS Bangladesh University Ranking places UIU at #3 nationally, marking the highest position in the institution's history.",
+            "full": "The newly released QS Bangladesh University Rankings 2026 place United International University at #3 nationally — its highest position to date. The ranking cited UIU's research output, industry partnerships, and student satisfaction scores as key drivers of the improvement."
+        }
+    ],
+    "alerts": [
+        {
+            "sev": "Moderate",
+            "kind": "📍 Traffic",
+            "sevClass": "moderate",
+            "cls": "orange",
+            "title": "Moderate Congestion — Madani Avenue",
+            "desc": "Slow moving traffic near Madani Avenue approaching UIU gate. Students advised to leave 20 minutes early.",
+            "loc": "Madani Avenue, Dhaka",
+            "time": "Updated 9:45 AM",
+            "tip": "Use alternative route via Pragati Sarani",
+            "tipClass": "orange-tip"
+        },
+        {
+            "sev": "High",
+            "kind": "🌧 Weather",
+            "sevClass": "high",
+            "cls": "red",
+            "title": "Heavy Rainfall Warning — Afternoon",
+            "desc": "BMD forecasts heavy rain with possible thunderstorms between 2 PM – 6 PM. Outdoor events may be affected.",
+            "loc": "Dhaka Metro Area",
+            "time": "Updated 9:00 AM",
+            "tip": "Carry rain gear; outdoor events rescheduled indoors",
+            "tipClass": "orange-tip"
+        },
+        {
+            "sev": "Low",
+            "kind": "🏢 Campus",
+            "sevClass": "low",
+            "cls": "blue",
+            "title": "Elevator Maintenance — Building C",
+            "desc": "Elevator in Building C out of service for scheduled maintenance from 10 AM – 1 PM.",
+            "loc": "UIU Building C",
+            "time": "Updated 6:00 AM",
+            "tip": "Use stairwell; accessible route via Building B bridge",
+            "tipClass": "blue-tip"
+        }
+    ]
+}

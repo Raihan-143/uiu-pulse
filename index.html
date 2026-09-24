@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign In · UIU Pulse</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body data-page="index">
+<div class="toast-container" id="toast-container"></div>
+<div class="page active" id="page-login">
+<div class="login-wrap">
+<div class="login-hero">
+<div class="brand">
+<div class="logo">
+<svg fill="none" height="20" viewbox="0 0 24 24" width="20"><path d="M12 3L1 8l11 5 9-4.09V17h2V8L12 3z" fill="currentColor"></path><path d="M5 13.18v4.09c0 1.5 3.13 3.73 7 3.73s7-2.23 7-3.73v-4.09L12 17l-7-3.82z" fill="currentColor"></path></svg>
+</div>
+<div>
+<div class="name">UIU Pulse</div>
+<div class="sub">United International University</div>
+</div>
+</div>
+<div class="pill-tag">
+<svg fill="none" height="13" viewbox="0 0 24 24" width="13"><path d="M2 12a10 10 0 0120 0M6 12a6 6 0 0112 0M10 12a2 2 0 014 0" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+        Live campus updates
+      </div>
+<h1>Your campus.<br/><span class="accent">Your pulse.</span></h1>
+<p class="lead">Stay ahead with real-time news, events, research opportunities, competitions, and alerts — all in one smart platform built for UIU.</p>
+<div class="tag-row">
+<span class="tag-chip">📰 Latest News</span>
+<span class="tag-chip">📅 Campus Events</span>
+<span class="tag-chip">🎓 Research Grants</span>
+<span class="tag-chip">🏆 Achievements</span>
+<span class="tag-chip">🥇 Competitions</span>
+<span class="tag-chip">🛡️ Campus Alerts</span>
+</div>
+<div class="stat-row">
+<div class="stat"><b>24K+</b><span>Students</span></div>
+<div class="stat"><b>1.2K+</b><span>Faculty</span></div>
+<div class="stat"><b>340+</b><span>Events/yr</span></div>
+</div>
+</div>
+<div class="login-panel">
+<div class="login-card-outer">
+<div class="tab-toggle">
+<button class="active" id="tab-signin" onclick="showSignIn()" type="button">Sign In</button>
+<button class="" id="tab-register" onclick="showRegister()" type="button">Register</button>
+</div>
+<!-- SIGN IN -->
+<form action="index.html" class="login-card" data-browser-auth="true" id="signin-card" method="get" novalidate="novalidate" style="">
+<input name="form" type="hidden" value="signin"/>
+<h2>Welcome back</h2>
+<p class="sub">Sign in to your UIU Pulse account</p>
+<div class="form-error" style="display:none;"></div>
+<div class="field">
+<label>UIU Email</label>
+<input name="email" placeholder="yourname@uiu.ac.bd" type="email" value=""/>
+</div>
+<div class="field">
+<label>Password <a href="#" onclick="handleForgotPassword(event)">Forgot password?</a></label>
+<div class="pw-wrap">
+<input id="signin-password" name="password" placeholder="••••••••" type="password"/>
+<button class="pw-eye" onclick="togglePw('signin-password',this)" type="button">👁</button>
+</div>
+</div>
+<div class="checkbox-row">
+<input id="remember" name="remember" type="checkbox"/>
+<label for="remember">Remember me for 30 days</label>
+</div>
+<button class="btn-primary" type="submit">Sign In →</button>
+<div class="divider">or</div>
+<button class="btn-google" id="googleLogin" type="button">
+<svg height="16" viewbox="0 0 48 48" width="16"><path d="M43.6 20.5H42V20H24v8h11.3C33.9 32.6 29.4 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.5 5.5 29.5 3.5 24 3.5 12.7 3.5 3.5 12.7 3.5 24S12.7 44.5 24 44.5 44.5 35.3 44.5 24c0-1.2-.1-2.3-.3-3.5z" fill="#FFC107"></path><path d="M6.3 14.7l6.6 4.8C14.6 15.5 18.9 12.5 24 12.5c3.1 0 5.8 1.1 8 3l6-6C34.5 5.5 29.5 3.5 24 3.5c-7.5 0-13.9 4.2-17.2 10.4z" fill="#FF3D00"></path><path d="M24 44.5c5.4 0 10.3-1.8 14.1-4.9l-6.5-5.4C29.6 35.7 27 36.5 24 36.5c-5.4 0-9.9-3.4-11.6-8.2l-6.7 5.1C9.9 40.1 16.4 44.5 24 44.5z" fill="#4CAF50"></path><path d="M43.6 20.5H42V20H24v8h11.3c-.9 2.6-2.7 4.8-5 6.2l6.5 5.4C40.5 36.4 44.5 30.6 44.5 24c0-1.2-.1-2.3-.3-3.5z" fill="#1976D2"></path></svg>
+            Continue with Google
+          </button>
+<p class="login-foot">Don't have an account? <button class="linklike" onclick="showRegister()" type="button">Register now</button></p>
+</form>
+<!-- REGISTER -->
+<form action="index.html" class="login-card" data-browser-auth="true" id="register-card" method="get" novalidate="novalidate" style="display:none;">
+<input name="form" type="hidden" value="register"/>
+<h2>Create your account</h2>
+<p class="sub">Join UIU Pulse to stay on top of campus life</p>
+<div class="form-error" style="display:none;"></div>
+<div class="field">
+<label>Full Name</label>
+<input name="name" placeholder="Your full name" type="text" value=""/>
+</div>
+<div class="field">
+<label>UIU Email</label>
+<input name="email" placeholder="yourname@uiu.ac.bd" type="email" value=""/>
+</div>
+<div class="field">
+<label>Password</label>
+<div class="pw-wrap">
+<input id="reg-password" name="password" placeholder="At least 6 characters" type="password"/>
+<button class="pw-eye" onclick="togglePw('reg-password',this)" type="button">👁</button>
+</div>
+</div>
+<div class="field">
+<label>Confirm Password</label>
+<div class="pw-wrap">
+<input id="reg-password2" name="password2" placeholder="Re-enter password" type="password"/>
+<button class="pw-eye" onclick="togglePw('reg-password2',this)" type="button">👁</button>
+</div>
+</div>
+<div class="checkbox-row">
+<input id="reg-terms" name="agree" type="checkbox"/>
+<label for="reg-terms">I agree to the <a href="#">Privacy Policy</a></label>
+</div>
+<button class="btn-primary" type="submit">Create Account →</button>
+<div class="divider">or</div>
+<button class="btn-google" id="googleLoginRegister" type="button">
+<svg height="16" viewbox="0 0 48 48" width="16"><path d="M43.6 20.5H42V20H24v8h11.3C33.9 32.6 29.4 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.5 5.5 29.5 3.5 24 3.5 12.7 3.5 3.5 12.7 3.5 24S12.7 44.5 24 44.5 44.5 35.3 44.5 24c0-1.2-.1-2.3-.3-3.5z" fill="#FFC107"></path><path d="M6.3 14.7l6.6 4.8C14.6 15.5 18.9 12.5 24 12.5c3.1 0 5.8 1.1 8 3l6-6C34.5 5.5 29.5 3.5 24 3.5c-7.5 0-13.9 4.2-17.2 10.4z" fill="#FF3D00"></path><path d="M24 44.5c5.4 0 10.3-1.8 14.1-4.9l-6.5-5.4C29.6 35.7 27 36.5 24 36.5c-5.4 0-9.9-3.4-11.6-8.2l-6.7 5.1C9.9 40.1 16.4 44.5 24 44.5z" fill="#4CAF50"></path><path d="M43.6 20.5H42V20H24v8h11.3c-.9 2.6-2.7 4.8-5 6.2l6.5 5.4C40.5 36.4 44.5 30.6 44.5 24c0-1.2-.1-2.3-.3-3.5z" fill="#1976D2"></path></svg>
+            Continue with Google
+          </button>
+<p class="login-foot">Already have an account? <button class="linklike" onclick="showSignIn()" type="button">Sign in</button></p>
+</form>
+<p class="browser-demo-note">Browser-only demo · No university account is connected.</p><p class="privacy-note">By continuing, you agree to UIU Pulse's <a href="#">Privacy Policy</a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Standalone forms submitted via form="..." attribute from buttons above -->
+
+<script src="js/script.js"></script><script src="js/config.js"></script><script defer="True" src="js/browser.js"></script>
+
+<script type="module" src="js/google-login.js"></script>
+</body>
+</html>

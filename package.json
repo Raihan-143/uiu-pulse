@@ -1,0 +1,13 @@
+
+{
+"name":"uiu-pulse-backend",
+"version":"1.0.0",
+"scripts":{"start":"node server.js"},
+"dependencies":{
+"cors":"latest",
+"dotenv":"latest",
+"express":"latest",
+"mongoose":"latest",
+"firebase-admin":"latest"
+}
+}

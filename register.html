@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register · UIU Pulse</title>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body data-page="register">
+<div class="login-wrap">
+<section class="login-hero">
+<div class="brand"><div class="logo">🎓</div><div><div class="name">UIU Pulse</div><div class="sub">United International University</div></div></div>
+<h1>Your campus.<br><span>Your pulse.</span></h1>
+<p>Create your UIU Pulse account and access campus updates, events, research and competitions.</p>
+</section>
+
+<section class="login-card">
+<div class="tabs"><a href="index.html">Sign In</a><a class="active">Register</a></div>
+<h2>Create account</h2>
+<p>Join UIU Pulse today</p>
+
+<label>Full Name</label>
+<input id="name" placeholder="Your name">
+
+<label>UIU Email</label>
+<input id="email" placeholder="yourname@uiu.ac.bd">
+
+<label>Password</label>
+<input id="password" type="password" placeholder="Create password">
+
+<label>Confirm Password</label>
+<input id="confirm" type="password" placeholder="Confirm password">
+
+<button onclick="registerUser()">Create Account</button>
+<p>Already have account? <a href="index.html">Sign In</a></p>
+</section>
+</div>
+<script src="js/auth.js"></script>
+</body>
+</html>

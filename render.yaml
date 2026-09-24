@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: uiu-pulse-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URL
+        sync: false
+      - key: PORT
+        value: 10000
